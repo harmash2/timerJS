@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nerko+One:regular&display=swap" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="wraper">
+    <h1 class="title">JS stopwatch</h1>
+    <section class="timer">
+      <div class="timer__screen--wrapper">
+        <div class="timer__screen">
+          <div class="timer__screen--glass"></div>
+          <p class="timer__text">
+            <span class="timer__hours">00</span>
+            <span class="timer__dots">:</span>
+            <span class="timer__minutes">00</span>
+            <span class="timer__seconds">00</span>
+            <span class="timer__milisecs">00</span>
+          </p>
+        </div>
+      </div>
+      <div class="timer__actions actions">
+        <button class="actions__btn" id="startBtn">
+          <span>Start</span>
+        </button>
+        <button class="actions__btn" id="stopBtn">
+          <span>Stop</span>
+        </button>
+        <button class="actions__btn" id="resetBtn">
+          <span>Reset</span>
+        </button>
+      </div>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

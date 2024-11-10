@@ -1,0 +1,149 @@
+@import "reset-style";
+
+.wraper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  align-items: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(180deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.title {
+  font-family: "Nerko One";
+  margin-bottom: 36px;
+  font-size: 56px;
+  background-color: #000508;
+  background-image: linear-gradient(0deg, #000508 0%, #9c9c9c 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.timer {
+  width: 368px;
+  border: .1875rem solid black;
+  border-radius: 1.25rem;
+  background-color: #222222;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  .5rem .5rem 1rem #6890b8,
+  -0.5rem -0.5rem 1rem #b4faff;
+
+    &__screen--wrapper {
+      padding: 17px 17px;
+      background-color: #4b4b4b;
+      border-radius: 16px;
+    }
+
+		&__screen {
+      width: 282px;
+      height: 72px;
+      text-align: center;
+      background-color: azure;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      box-shadow: inset .3125rem .3125rem .0625rem #2b2b2b,
+      inset -0.3125rem -0.3125rem .0625rem #6b6b6b;
+		}
+
+    &__screen--glass {
+      position: absolute;
+      width: 282px;
+      height: 72px;
+      background: rgba(78, 84, 79, 0.531);
+      border-radius: 5px;
+      box-shadow: 0 .25rem 1.875rem rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(.0437rem);
+      -webkit-backdrop-filter: blur(.35rem);
+      border: .0625rem solid rgba(78, 84, 79, 0.25);
+    }
+
+		&__text {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 4rem;
+      display: flex;
+      gap: .625rem;
+      justify-content: flex-start;
+      margin-left: 2.75rem;
+      span {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 48px;
+        color: #161616;
+        letter-spacing: .1875rem;
+        background: rgba(78, 84, 79, 0);
+        text-shadow: .125rem .0625rem 0rem rgba(22, 22, 22, 0.2);
+        transition: all 0.3s ease;
+
+        &:nth-child(4) {
+          font-size: 32px;
+          margin-left: .3125rem;
+          margin-top: auto;
+        }
+        &:nth-child(5) {
+          font-size: 24px;
+          text-shadow: none;
+          color: rgba(22, 22, 22, 0.9);
+          margin-top: 0;
+        }
+      }
+		}
+
+    &__seconds {
+    }
+}
+.actions {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+
+  &__btn {
+    width: 5.3125rem;
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s ease ;
+    box-shadow:  .1875rem .1875rem .375rem #0e0e0e,
+    -0.1875rem -0.1875rem .375rem #363636;
+
+    &:active {
+      transform: scale(0.9);
+      box-shadow:  .0625rem .0625rem .1875rem #0e0e0e,
+             -0.0625rem -0.0625rem .1875rem #363636;
+    }
+  }
+}
+
+span {
+  font-family: "Nerko One";
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(199, 199, 199);
+  letter-spacing: .125rem;
+}
+
+
+
+#stopBtn {
+  background: #9c1f1f;
+  border: .0625rem solid #651515;
+}
+#startBtn {
+  background: #257918;
+  border: .0625rem solid #1c5a12
+}
+#resetBtn {
+  background: #195bb2;
+}
